@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Open+Sans:wght@300&display=swap');
+
+#portrait {
+    border-radius: 30px;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+}

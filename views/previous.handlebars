@@ -1,0 +1,98 @@
+<link rel="stylesheet" href="/css/previous.css" type="text/css">
+<link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+<div class="container">
+  <div class="jumbotron">
+		<h1 id="logoText"> Random Workout of the Day</h1>
+    <hr class="my-4">
+    <p class="aboutText">Choose from a previous workout or create your own</p>
+  </div>
+  <!-- create two columns for previous WOD section -->
+  <div class="gray">
+    <div class="outer" id="displayRow">
+      <div id="prevDivList">
+        <form action="/findwod" method="get">
+          <legend>Find a Previous W.O.D.</legend>
+          <div class="findWOD">
+            <!-- populate list of WOD names as received from database -->
+              <select id="wodName" name="wodName" class="form-control">
+                {{#each wodNames}}
+                <option value="{{this}}">{{this}}</option>
+                {{/each}}
+              </select>
+          </div>
+          
+        </form>
+      </div>
+      <br>
+      <div id="WODdisplay" id="prevDivDisplay">
+        <ul id="WODdisplayul">
+          <!-- section to diplay WOD (always display Cindy WOD when page initially loads) -->
+          <li class="AMRAPlist AMRAPname">CINDY</li>
+          <li id="instructions" class="AMRAPlist">As Many Rounds as Possible in 20 minutes</li>
+          <li class="AMRAPlist">5 Pull Ups</li>
+          <li class="AMRAPlist">10 Push Ups</li>
+          <li class="AMRAPlist">15 Air Squats</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="gray">
+    <!-- allow the user to create a custom WOD -->
+    <div id="createDiv" class="outer">
+      <form id="myform" action="/savemove" method="post">
+        <legend>Create your own W.O.D.!</legend>
+          <div class="addWOD">
+            {{#each id}}
+            <fieldset>
+              <div class="container">
+                <div class="row">
+                  <div>
+                    <label class="movements">Movement {{this}}: </label>
+                  </div>
+                  <div>
+                    <label>reps:
+                      <input type="number" name="reps_{{this}}"  min="1" max="5000">
+                      <select id="units" name="units_{{this}}">
+                        <option value="Meter">Meter</option>
+                        <option value="Second">Second</option>
+                        <option value="Calorie">Calorie</option>
+                        <option value="none"></option>
+                      </select>
+                    </label>
+                    <!-- populate options with movement names received from the database -->
+                    <label>type:
+                      <select name="movement_{{this}}">
+                        {{#each ../movements}}
+                        <option value="{{this}}">{{this}}</option>
+                        {{/each}}
+                      </select>
+                    </label>
+                    <label>weight(men):
+                      <input type="number" name="Mweight_{{this}}" min="0" max="999">
+                    </label>
+                    <label>(women):
+                      <input type="number" name="Wweight_{{this}}" min="0" max="999">
+                    </label>
+                  </div>
+                </div> 
+              </div>
+            </fieldset>
+            <br>
+            {{/each}}
+            <label>How long is your W.O.D.?
+              <input type="number" name="time" min="0" max="60"> minutes
+            </label>
+            <br>
+            <label>Give your W.O.D. a name:
+              <input type="text" name="WODname" size="10" maxlength="20">
+            </label>
+          </div>
+        <input id="mysubmit" class="buttons btn btn-primary btn-md" type="submit" value="Submit" />
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="/js/previous.js"></script>

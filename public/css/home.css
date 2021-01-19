@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Open+Sans:wght@300&display=swap');
+
+.list {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.row {
+    border-spacing: 0;
+    border-collapse: collapse;
+    line-height: 2;
+    display: block;
+ }
+
+.equipCheck {
+    text-align: right;
+    border-spacing: 0;
+    border-collapse: collapse;
+    
+}
+
+.equipTable {
+    font-family: monospace;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+#WODTable {
+    font-family: monospace;
+    font-size: 35px;
+    text-align: left;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+#AMRAP {
+    font-size: 25px;
+    text-align: center;
+}
+
+#AMRAPname {
+    display: block;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#equipList {
+    list-style: none;
+    border-spacing:0;
+    border-collapse: collapse;
+}
+
+#newName{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+}
+
+.AMRAPlistLI {
+    list-style: none;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#tableDiv {
+    text-align: center;
+} 
+
+#equipDiv {
+    padding-bottom: 50px;
+}
+
+#saveForm {
+    padding-top: 50px;
+}

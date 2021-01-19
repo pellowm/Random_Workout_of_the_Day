@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Open+Sans:wght@300&display=swap');
+
+body {
+    font-size: 18px;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+.navbar {
+    background-color: #383838 ;
+    font-family: 'Allerta Stencil', sans-serif;
+    color: white;
+}
+
+.menubar {
+    background-color: #383838 ;
+}
+
+.vertButton {
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #383838 ;
+}
+
+#footer {
+    padding-top: 100px;
+    padding-bottom: 20px;
+    font-size: 12px;
+}
+
+.navbar-brand {
+    background-color: #383838 ;
+    font-family: 'Allerta Stencil', sans-serif;
+    color: white ;
+}
+
+.navbar-brand:hover {
+    color: gray;
+}
+
+.icon-bar {
+    background-color: white;
+}
+
+.gray {
+    background-color: #eee;
+    border-radius: 8px;
+}
+
+.jumbotron {
+    background-color: #383838;
+    font-family: 'Allerta Stencil', sans-serif;
+    color: white;
+}
+
+.aboutText {
+    font-family: "Lucida Console", Monaco, monospace;
+    color: white;
+}
+
+.outer {
+    padding: 20px;
+}

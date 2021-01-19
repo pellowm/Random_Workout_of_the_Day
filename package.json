@@ -1,0 +1,19 @@
+{
+  "name": "RandomWOD",
+  "version": "1.0.0",
+  "description": "generate a workout for your home gym set up",
+  "main": "randomWOD.js",
+  "scripts": {
+    "start" : "node ./randomWOD.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Megan Pellow",
+  "license": "None",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "express": "^4.13.2",
+    "express-handlebars": "^4.0.4",
+    "express-session": "^1.11.3",
+    "mysql": "^2.8.0"
+  }
+}

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Open+Sans:wght@300&display=swap');
+
+.AMRAPlist {
+    list-style: none;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.AMRAPname {
+    font-family: 'Allerta Stencil', sans-serif;
+}
+
+#instructions {
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.movements {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#wodName {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#WODdisplayul {
+    padding: 0;
+}
+
+#displayRow {
+    padding-bottom: 75px;
+}
+
+.findWOD {
+    display: inline-block;
+}

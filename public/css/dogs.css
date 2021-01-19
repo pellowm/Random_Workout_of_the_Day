@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Open+Sans:wght@300&display=swap');
+
+.videos {
+    overflow: hidden; 
+    border-radius: 30px; 
+}
+
+.ptext {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#about{
+
+    text-align: center;
+}
+
+figcaption {
+    padding-bottom: 30px;
+}
